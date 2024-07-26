@@ -10,8 +10,8 @@ client.on('messageCreate', (message) => {
     if (message.author.id === client.user.id) return
     message.markSeen();
 
-    if(message.content.toLowerCase().includes('hi')){ 
-        return message.chat.sendMessage('VENOM IS MY DEVELOPER CHECK OUT HIS CHANNEL :- https://youtube.com/c/VenomExE');
+    if(message.content.toLowerCase().includes('hii')){ 
+        return message.chat.sendMessage('DESTROYER SIR IS MY DEVELOPER CHECK OUT HIS CHANNEL :- https://instagram.com/ipx_king_yt_official');
     } else
     chatbot(`https://brv-chat.vercel.app/api?message=${encodeURIComponent(message.content)}`)
     .then(res => res.json())
