@@ -20,4 +20,4 @@ client.on('messageCreate', (message) => {
     }).catch(err => {});
 });
 
-client.login('<insta-username>', '<insta-password>');
+client.login(process.env.username, process.env.password)
